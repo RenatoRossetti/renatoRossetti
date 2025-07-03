@@ -1,4 +1,4 @@
-## olá eu sou Renato Rossetti, seja bem-vindo!!👋
+## Olá eu sou Renato Rossetti, seja bem-vindo!!👋
 
 <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
 <div>
@@ -15,5 +15,3 @@
   <img aling="center" alt="renato_python" height="60" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
   <img aling="center" alt="renato_python" height="60" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
 </div>
-
-          
