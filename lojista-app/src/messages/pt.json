@@ -1,0 +1,17 @@
+{
+  "app.title": "Lojista App",
+  "nav.sales": "Vendas",
+  "nav.products": "Produtos",
+  "nav.inventory": "Estoque",
+  "nav.finance": "Gestão financeira",
+  "nav.settings": "Configurações",
+  "nav.theme": "Tema",
+  "nav.dark": "Escuro",
+  "nav.light": "Claro",
+  "nav.language": "Idioma",
+  "nav.logout": "Sair",
+  "sales.title": "Ponto de venda",
+  "products.title": "Catálogo de produtos",
+  "inventory.title": "Controle de estoque",
+  "finance.title": "Painel financeiro"
+}

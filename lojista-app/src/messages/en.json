@@ -1,0 +1,17 @@
+{
+  "app.title": "Retailer App",
+  "nav.sales": "Sales",
+  "nav.products": "Products",
+  "nav.inventory": "Inventory",
+  "nav.finance": "Financials",
+  "nav.settings": "Settings",
+  "nav.theme": "Theme",
+  "nav.dark": "Dark",
+  "nav.light": "Light",
+  "nav.language": "Language",
+  "nav.logout": "Log out",
+  "sales.title": "Point of Sale",
+  "products.title": "Product Catalog",
+  "inventory.title": "Inventory Control",
+  "finance.title": "Finance Dashboard"
+}
