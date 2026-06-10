@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
 <div>
-  <a href="https://beacon.ai/renatoRossetti">
+  <a href="https://beacon.ai/RenatoRossetti">
   <img height="180cm" src="https://github-readme-stats.vercel.app/api?username=renatoRossetti&show_icons=true&theme=onedark&include_all_commits=true&count_private=true"/><br>
   <img height="180cm" src="https://github-readme-stats.vercel.app/api/top-langs/?username=renatoRossetti&layout=compact&langs_count=16&theme=onedark"/>
 </div>
