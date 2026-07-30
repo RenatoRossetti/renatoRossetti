@@ -2,9 +2,8 @@
 
 <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
 <div>
-  <a href="https://beacon.ai/RenatoRossetti">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=RenatoRossetti&show_icons=true"/><br>
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=RenatoRossetti&show_icons=true"/>
+  <a href="https://beacon.ai/renatoRossetti">renatoRossetti&show_icons=true"/><br>
+  <img height="180" src="https://github-readme-stats.vercel.app/api?username=renatoRossetti&show_icons=true"/>
 </div>
     
 <div style="display:block"><br>
