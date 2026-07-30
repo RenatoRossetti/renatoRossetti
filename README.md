@@ -1,10 +1,6 @@
 ## Olá eu sou Renato Rossetti, seja bem-vindo!!👋
 
 <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
-<div>
-  <a href="https://beacon.ai/renatoRossetti">renatoRossetti&show_icons=true"/><br>
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=renatoRossetti&show_icons=true"/>
-</div>
     
 <div style="display:block"><br>
   <img aling="center" alt="renato_python" height="60" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
