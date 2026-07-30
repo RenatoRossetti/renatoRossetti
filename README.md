@@ -1,10 +1,15 @@
 ## Olá eu sou Renato Rossetti, seja bem-vindo!!👋
 
-<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
-<div>
-  <a href="https://beacon.ai/RenatoRossetti">
-  <img height="180cm" src="https://github-readme-stats.vercel.app/api?username=renatoRossetti&show_icons=true&theme=onedark&include_all_commits=true&count_private=true"/><br>
-  <img height="180cm" src="https://github-readme-stats.vercel.app/api/top-langs/?username=renatoRossetti&layout=compact&langs_count=16&theme=onedark"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+
+<div align="center">
+
+<img height="180em"
+src="https://github-readme-stats.vercel.app/api?username=renatoRossetti&show_icons=true&theme=onedark&include_all_commits=true&count_private=true&cache_seconds=86400"/>
+
+<img height="180em"
+src="https://github-readme-stats.vercel.app/api/top-langs/?username=renatoRossetti&layout=compact&langs_count=8&theme=onedark&cache_seconds=86400"/>
+
 </div>
     
 <div style="display:block"><br>
