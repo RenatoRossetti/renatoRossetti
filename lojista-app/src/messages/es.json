@@ -1,0 +1,17 @@
+{
+  "app.title": "App de Tienda",
+  "nav.sales": "Ventas",
+  "nav.products": "Productos",
+  "nav.inventory": "Inventario",
+  "nav.finance": "Finanzas",
+  "nav.settings": "Configuraciones",
+  "nav.theme": "Tema",
+  "nav.dark": "Oscuro",
+  "nav.light": "Claro",
+  "nav.language": "Idioma",
+  "nav.logout": "Salir",
+  "sales.title": "Punto de Venta",
+  "products.title": "Catálogo de Productos",
+  "inventory.title": "Control de Inventario",
+  "finance.title": "Panel Financiero"
+}

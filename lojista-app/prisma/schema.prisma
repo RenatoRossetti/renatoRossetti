@@ -1,0 +1,127 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// Store settings and profile
+model Store {
+  id               String   @id @default(cuid())
+  name             String
+  whatsappCountry  String?
+  whatsappNumber   String?
+  locale           String   @default("pt")
+  primaryColor     String   @default("#0ea5e9")
+  darkMode         Boolean  @default(false)
+  iconUrl          String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  products         Product[]
+  groups           ProductGroup[]
+  sales            Sale[]
+  expenses         Expense[]
+}
+
+// Category/Group for products
+model ProductGroup {
+  id       String  @id @default(cuid())
+  name     String
+  imageUrl String?
+  storeId  String
+  store    Store   @relation(fields: [storeId], references: [id], onDelete: Cascade)
+
+  products Product[]
+}
+
+// Product catalog entry
+model Product {
+  id                   String                 @id @default(cuid())
+  name                 String
+  sku                  String?                @unique
+  priceCents           Int                     // stored in cents to avoid float issues
+  costCents            Int                     // stored in cents to avoid float issues
+  imageUrl             String?
+  lowStockThreshold    Int                    @default(1)
+  stock                Int                    @default(0)
+  groupId              String?
+  group                ProductGroup?          @relation(fields: [groupId], references: [id])
+  storeId              String
+  store                Store                  @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  createdAt            DateTime               @default(now())
+  updatedAt            DateTime               @updatedAt
+
+  saleItems            SaleItem[]
+  inventoryTransactions InventoryTransaction[]
+}
+
+// Inventory changes (positive for additions, negative for deductions)
+model InventoryTransaction {
+  id        String   @id @default(cuid())
+  productId String
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  quantity  Int
+  reason    String   // purchase, sale, adjustment, maintenance
+  createdAt DateTime @default(now())
+}
+
+// Point-of-sale sale
+model Sale {
+  id        String    @id @default(cuid())
+  storeId   String
+  store     Store     @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  items     SaleItem[]
+  payments  Payment[]
+  subtotalCents Int
+  discountCents Int      @default(0)
+  totalCents    Int
+  status    String    @default("completed")
+  createdAt DateTime  @default(now())
+}
+
+// Items within a sale
+model SaleItem {
+  id        String  @id @default(cuid())
+  saleId    String
+  sale      Sale    @relation(fields: [saleId], references: [id], onDelete: Cascade)
+  productId String
+  product   Product @relation(fields: [productId], references: [id])
+  quantity  Int
+  unitPriceCents Int // unit price at time of sale
+}
+
+enum PaymentMethod {
+  CASH
+  PIX
+  CREDIT
+  DEBIT
+}
+
+// Payments for a sale
+model Payment {
+  id          String        @id @default(cuid())
+  saleId      String
+  sale        Sale          @relation(fields: [saleId], references: [id], onDelete: Cascade)
+  method      PaymentMethod
+  amountCents Int
+  externalRef String?
+  receivedAt  DateTime      @default(now())
+}
+
+// Expenses like product purchases, maintenance, overhead
+model Expense {
+  id         String   @id @default(cuid())
+  storeId    String
+  store      Store    @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  description String
+  category   String?
+  amountCents Int
+  occurredAt DateTime @default(now())
+}
